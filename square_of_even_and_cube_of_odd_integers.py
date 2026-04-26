@@ -4,4 +4,5 @@ class IntegerFileProcessor:
         self.even_output_file = even_output_file
         self.odd_output_file = odd_output_file
 
-    
+    def process_files(self):
+        with open(self.input_file, 'r') as file:
