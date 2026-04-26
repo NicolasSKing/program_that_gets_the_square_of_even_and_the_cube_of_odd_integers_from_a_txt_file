@@ -8,3 +8,5 @@ class IntegerFileProcessor:
         with open(self.input_file, 'r') as file:
             numbers = file.read().split()
 
+        with open(self.even_output_file, 'w') as even_file, open(self.odd_output_file, 'w') as odd_file:
+            
