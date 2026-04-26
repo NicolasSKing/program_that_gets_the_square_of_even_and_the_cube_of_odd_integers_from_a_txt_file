@@ -6,3 +6,5 @@ class IntegerFileProcessor:
 
     def process_files(self):
         with open(self.input_file, 'r') as file:
+            numbers = file.read().split()
+
