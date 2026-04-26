@@ -9,4 +9,10 @@ class IntegerFileProcessor:
             numbers = file.read().split()
 
         with open(self.even_output_file, 'w') as even_file, open(self.odd_output_file, 'w') as odd_file:
-            
+            for num in numbers:
+                number = int(num)
+
+                if number % 2 == 0:
+                    even_file.write(str(num ** 2) + '\n')
+                else:
+                    odd_file.write(str(num ** 3) + '\n')
